@@ -27,3 +27,9 @@ set desktop sharing if it is used as host
 set remmina if it is used as terminal
 ![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")
 ![remmina_add](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "remmina_add")
+
+***
+# remastersys backup
+
+![download](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)
+![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "desktop_settings")

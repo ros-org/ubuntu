@@ -1,9 +1,7 @@
 # download iso
 
-open <https://www.vmware.com/products/workstation/>
-
-download and install workstation
-![download_workstation](https://raw.githubusercontent.com/ouiyeah/vmware/master/img/download_workstation.png "download_workstation")
+open <http://www.ubuntu.com/download/desktop/>
+![download_iso](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/download_iso.png "download_iso")
 
 ***
 # install system

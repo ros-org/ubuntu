@@ -20,5 +20,10 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ***
 # remote desktop
 
+set desktop sharing if it is used as host
+![desktop_sharing](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_sharing.png "desktop_sharing")
+![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "desktop_settings")
+
+set remmina if it is used as terminal
 ![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")
 ![remmina_add](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "remmina_add")

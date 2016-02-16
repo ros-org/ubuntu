@@ -22,7 +22,7 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 
 set desktop sharing if it is used as host
 ![desktop_sharing](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_sharing.png "desktop_sharing")
-![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "desktop_settings")
+![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_settings.png "desktop_settings")
 
 set remmina if it is used as terminal
 ![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")
@@ -32,4 +32,16 @@ set remmina if it is used as terminal
 # remastersys backup
 
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)
-![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "desktop_settings")
+![install_remastersys](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_remastersys.png "install_remastersys")
+
+do the remastersys backup
+
+>sudo remastersys backup
+
+wait for a while and get the generated file <custom-backup.iso> at /home/remastersys/
+
+use other software (e.g. ultraiso) to make boot disk if necessary
+
+remember to set the link for network connection if failed to visit websites after installation
+
+>sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf

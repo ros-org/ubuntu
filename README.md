@@ -17,6 +17,10 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ![install_wait](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_wait.png "install_wait")
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
+remember to set the link for network connection if failed to visit websites after installation
+
+>sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+
 ***
 # remote desktop
 

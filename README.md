@@ -19,7 +19,7 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 
 remember to set the link for network connection if failed to visit websites after installation
 
->sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+>$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
 
 ***
 # remote desktop
@@ -40,7 +40,7 @@ download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah
 
 do the remastersys backup
 
->sudo remastersys backup
+>$ sudo remastersys backup
 
 wait for a while and get the generated file <custom-backup.iso> at /home/remastersys/
 
@@ -48,4 +48,4 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 
 remember to set the link for network connection if failed to visit websites after installation
 
->sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+>$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf

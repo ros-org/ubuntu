@@ -17,8 +17,13 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ![install_wait](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_wait.png "install_wait")
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
-remember to set the link for network connection if failed to visit websites after installation
+***
+# ethernet_connection
+
 ![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
+
+remember to set the link for network connection if failed to visit websites after installation
+
 >$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
 
 ***
@@ -45,7 +50,3 @@ do the remastersys backup
 wait for a while and get the generated file <custom-backup.iso> at /home/remastersys/
 
 use other software (e.g. ultraiso) to make boot disk if necessary
-
-remember to set the link for network connection if failed to visit websites after installation
-![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
->$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf

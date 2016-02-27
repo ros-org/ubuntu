@@ -18,7 +18,7 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
 ***
-# ethernet_connection
+# ethernet connection
 
 ![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
 

@@ -46,6 +46,8 @@ set remmina if it is used as terminal
 
 >$ sudo vi /etc/hostname
 
+    [hostname]
+
 >$ sudo vi /etc/hosts
 
     127.0.0.1       localhost

@@ -42,6 +42,15 @@ set remmina if it is used as terminal
 ![remmina_add](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "remmina_add")
 
 ***
+# change hostname
+
+>$ sudo vi /etc/hostname
+
+>$ sudo vi /etc/hosts
+    127.0.0.1       localhost
+    127.0.1.1       [hostname]
+
+***
 # remastersys backup
 
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)

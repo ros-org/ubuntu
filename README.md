@@ -54,6 +54,20 @@ set remmina if it is used as terminal
     127.0.1.1       [hostname]
 
 ***
+# startup configuration
+
+![startup_applications](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/startup_applications.png "startup_applications")
+![edit_preferences](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/edit_preferences.png "edit_preferences")
+
+edit the startup program command as
+
+> gnome-terminal -x ./workspaces/boot.sh
+
+remember to change boot file mode to executable
+
+>$ chmod +x ~/workspaces/boot.sh
+
+***
 # remastersys backup
 
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)

@@ -22,6 +22,10 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 
 ![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
 
+set dns as network provider 
+
+> 211.136.17.107 / 211.136.112.50 for china mobile
+
 remember to set the link for network connection if failed to visit websites after installation
 
 >$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf

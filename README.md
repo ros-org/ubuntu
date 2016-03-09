@@ -54,10 +54,9 @@ set remmina if it is used as terminal
     127.0.1.1       [hostname]
 
 ***
-# startup configuration
+# auto startup
 
 ![startup_applications](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/startup_applications.png "startup_applications")
-
 ![edit_preferences](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/edit_preferences.png "edit_preferences")
 
 edit the startup program command as
@@ -67,6 +66,19 @@ edit the startup program command as
 remember to change boot file mode to executable
 
 >$ chmod +x ~/workspaces/boot.sh
+
+***
+# auto shutdown
+
+>$ sudo gedit /etc/sudoers
+
+    user hostname=NOPASSWD: /sbin/shutdown -h now
+    user hostname=NOPASSWD: /sbin/reboot
+
+***
+# usermod permission
+
+>$ sudo usermod -aG dialout username
 
 ***
 # remastersys backup

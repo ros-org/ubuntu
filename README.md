@@ -70,7 +70,7 @@ remember to change boot file mode to executable
 ***
 # auto shutdown
 
->$ sudo gedit /etc/sudoers
+>$ sudo vi /etc/sudoers
 
     user hostname=NOPASSWD: /sbin/shutdown -h now
     user hostname=NOPASSWD: /sbin/reboot

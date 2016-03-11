@@ -59,13 +59,15 @@ set remmina if it is used as terminal
 ![startup_applications](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/startup_applications.png "startup_applications")
 ![edit_preferences](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/edit_preferences.png "edit_preferences")
 
-edit the startup program command as
+edit the startup program command as follow if running boot.sh file
 
 > gnome-terminal -x ./workspaces/boot.sh
 
-remember to change boot file mode to executable
-
 >$ chmod +x ~/workspaces/boot.sh
+
+edit the startup program command as follow if running ros file before calling .bashrc
+
+> gnome-terminal -x bash -c 'export ROS_IP=`hostname -I`; source /opt/ros/indigo/setup.bash; source ~/catkin_ws/devel/setup.bash; roslaunch bringup bringup-boot.launch'
 
 ***
 # auto shutdown

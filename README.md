@@ -82,13 +82,9 @@ edit the startup program command as follow if running ros file before calling .b
 
 >$ sudo usermod -aG dialout username
 
-create rule file for current user
+create tty rule file for current user
 
->$ sudo vi /etc/udev/rules.d/70-ttyusb.rules
-
-write as follow rules
-
-> KERNEL=="ttyUSB[0-9]*", MODE="0666"
+>$ echo 'KERNEL=="ttyUSB[0-9]*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
 
 ***
 # remastersys backup

@@ -92,7 +92,7 @@ create tty rule file for current user
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)
 ![install_remastersys](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_remastersys.png "install_remastersys")
 
-change "WORKDIR" to custom directory
+change "WORKDIR" to custom directory (e.g. /media/ouiyeah/ouiyeah/remastersys)
 
 >$ sudo nano /etc/remastersys.conf
 

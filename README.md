@@ -72,10 +72,12 @@ edit the startup program command as follow if running ros file before calling .b
 ***
 # auto shutdown
 
->$ sudo vi /etc/sudoers
+>$ pkexec /etc/sudoers
 
-    user hostname=NOPASSWD: /sbin/shutdown -h now
-    user hostname=NOPASSWD: /sbin/reboot
+add the following lines at the end of the file
+
+> user hostname=NOPASSWD: /sbin/shutdown -h now
+> user hostname=NOPASSWD: /sbin/reboot
 
 ***
 # usermod permission

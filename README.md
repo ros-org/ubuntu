@@ -72,7 +72,7 @@ edit the startup program command as follow if running ros file before calling .b
 ***
 # auto shutdown
 
->$ pkexec /etc/sudoers
+>$ pkexec visudo -f /etc/sudoers
 
 add the following lines at the end of the file
 

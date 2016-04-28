@@ -90,6 +90,10 @@ create tty rule file for current user
 
 >$ echo 'KERNEL=="ttyUSB[0-9]*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
 
+>$ lsusb
+![lsusb_lookup](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/lsusb_lookup.png "lsusb_lookup")
+>$ echo 'SUBSYSTEM=="tty", ATTRS{idVendor}=="1d6b(e.g.)", ATTRS{idProduct}=="0002(e.g.)", SYMLINK+="alias_name(e.g.)"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
+
 ***
 # remastersys backup
 

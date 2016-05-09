@@ -43,9 +43,9 @@ set desktop sharing if it is used as host
 
 set xrdp for connecting ubuntu from other system terminal (e.g. windows / ubuntu)
 
->$ sudo apt-get install xrdp
-
 >$ sudo apt-get install vnc4server
+
+>$ sudo apt-get install xrdp
 
 >$ sudo apt-get install dconf-editor
 

@@ -41,7 +41,7 @@ set desktop sharing if it is used as host
 ![desktop_sharing](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_sharing.png "desktop_sharing")
 ![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_settings.png "desktop_settings")
 
-set xrdp for connecting ubuntu from windows
+set xrdp for connecting ubuntu from other system terminal (e.g. windows / ubuntu)
 
 >$ sudo apt-get install xrdp
 
@@ -52,6 +52,9 @@ set xrdp for connecting ubuntu from windows
 open dconf-editor and visit org > gnome > desktop > remote-access
 ![dconf_editor](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/dconf_editor.png "dconf_editor")
 uncheck the “requlre-encryption” attribute
+
+use remote desktop from rdp to vnc
+![remote_rdp_vnc](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remote_rdp_vnc.png "remote_rdp_vnc")
 
 ***
 # change hostname

@@ -33,13 +33,25 @@ remember to set the link for network connection if failed to visit websites afte
 ***
 # remote desktop
 
+set remmina if it is used as terminal
+![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")
+![remmina_add](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "remmina_add")
+
 set desktop sharing if it is used as host
 ![desktop_sharing](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_sharing.png "desktop_sharing")
 ![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_settings.png "desktop_settings")
 
-set remmina if it is used as terminal
-![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")
-![remmina_add](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "remmina_add")
+set xrdp for connecting ubuntu from windows
+
+>$ sudo apt-get install xrdp
+
+>$ sudo apt-get install vnc4server
+
+>$ sudo apt-get install dconf-editor
+
+open dconf-editor and visit org > gnome > desktop > remote-access
+![dconf_editor](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/dconf_editor.png "dconf_editor")
+uncheck the “requlre-encryption” attribute
 
 ***
 # change hostname

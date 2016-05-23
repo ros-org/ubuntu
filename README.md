@@ -107,6 +107,12 @@ lookup the device ID_PATH
 
 >$ echo 'SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:1a.0-usb-0:1.1:1.0", SYMLINK+="alias_name(e.g.)"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
 
+change ttyS* for user permission
+
+>$ sudo chown root:root file_name
+
+>$ sudo chmod u+s file_name
+
 ***
 # remastersys backup
 

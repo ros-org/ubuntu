@@ -79,19 +79,19 @@ edit the startup program command as follow if running ros file before calling .b
 > gnome-terminal -x bash -c 'export ROS_IP=`hostname -I`; source /opt/ros/indigo/setup.bash; source ~/catkin_ws/devel/setup.bash; roslaunch bringup bringup-boot.launch'
 
 ***
-# auto shutdown
+# usermod permission
+
+cancel sudo password
+
+>$ sudo sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ c %sudo\tALL=(ALL:ALL) NOPASSWD:ALL" /etc/sudoers
+
+use pkexec command if sudo failed
 
 >$ pkexec visudo -f /etc/sudoers
 
-add the following lines at the end of the file
-
-    [user] [hostname]=NOPASSWD: /sbin/shutdown -h now
-    [user] [hostname]=NOPASSWD: /sbin/reboot
-
 save (ctrl^o + return) and exit (ctrl^x)
 
-***
-# usermod permission
+add user group permission
 
 >$ sudo usermod -aG dialout username
 

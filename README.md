@@ -79,7 +79,7 @@ edit the startup program command as follow if running ros file before calling .b
 > gnome-terminal -x bash -c 'export ROS_IP=`hostname -I`; source /opt/ros/indigo/setup.bash; source ~/catkin_ws/devel/setup.bash; roslaunch bringup bringup-boot.launch'
 
 ***
-# usermod permission
+# permission settings
 
 cancel sudo password
 
@@ -94,6 +94,12 @@ save (ctrl^o + return) and exit (ctrl^x)
 add user group permission
 
 >$ sudo usermod -aG dialout username
+
+change grub permission
+
+>$ sudo sed -i '177s/ ro / rw /' /etc/grub.d/10_linux
+
+>$ sudo update-grub
 
 create tty rule file for current user
 
@@ -119,7 +125,7 @@ change ttyS* for user permission
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)
 ![install_remastersys](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_remastersys.png "install_remastersys")
 
-change "WORKDIR" to custom directory (e.g. /home/remastersys)
+change "WORKDIR" to custom directory if necessary (e.g. /home/remastersys)
 
 >$ sudo nano /etc/remastersys.conf
 

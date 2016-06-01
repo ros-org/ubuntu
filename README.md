@@ -18,7 +18,7 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
 ***
-# ethernet connection
+# network connection
 
 ![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
 
@@ -55,6 +55,11 @@ uncheck the “requlre-encryption” attribute
 
 use remote desktop from rdp to vnc
 ![remote_rdp_vnc](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remote_rdp_vnc.png "remote_rdp_vnc")
+
+***
+# install software
+
+>$ sudo apt-get install vim ssh setserial cutecom
 
 ***
 # change hostname

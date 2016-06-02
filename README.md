@@ -20,6 +20,17 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ***
 # network connection
 
+>$ sudo vi /etc/network/interfaces
+
+    #auto lo
+    #iface lo inet loopback
+    auto eth0
+    iface eth0 inet static
+    address 192.168.0.7
+    netmask 255.255.255.0
+
+bind eth0 to staic address
+
 ![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
 
 set dns as network provider 

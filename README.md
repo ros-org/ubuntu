@@ -117,6 +117,10 @@ change grub permission
 
 >$ sudo update-grub
 
+change powerbtn action
+
+>$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=sudo /sbin/shutdown -h now" /etc/acpi/events/powerbtn
+
 create tty rule file for current user
 
 >$ echo 'KERNEL=="ttyUSB[0-9]*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules

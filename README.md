@@ -144,6 +144,7 @@ change ttyS* for user permission
 
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)
 ![install_remastersys](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_remastersys.png "install_remastersys")
+note that remastersys should be re-installed if it is already a remastersys backup system
 
 change "WORKDIR" to custom directory if necessary (e.g. /home/remastersys)
 

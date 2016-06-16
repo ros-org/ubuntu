@@ -150,10 +150,20 @@ change "WORKDIR" to custom directory if necessary (e.g. /home/remastersys)
 
 >$ sudo nano /etc/remastersys.conf
 
+
+
 do the remastersys backup
 
 >$ sudo remastersys backup
 
 wait for a while and get the generated file <custom-backup.iso> at /home/remastersys/
+
+note that teminate the backup ctrl+c and do the following if the basename warning happened
+
+>$ dpkg --purge popularity-contest
+
+>$ dpkg -r popularity-contest
+
+>$ sudo apt-get remove ubiquity*
 
 use other software (e.g. ultraiso) to make boot disk if necessary

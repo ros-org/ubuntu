@@ -162,10 +162,14 @@ wait for a while and get the generated file <custom-backup.iso> at /home/remaste
 
 note that teminate the backup ctrl+c and do the following if the basename warning happened
 
->$ dpkg --purge popularity-contest
-
->$ dpkg -r popularity-contest
+>$ sudo apt-get remove popularity-contest
 
 >$ sudo apt-get remove ubiquity*
+
+>$ sudo apt-get remove remastersys
+
+>$ sudo apt-get update
+
+>$ sudo apt-get -f install 
 
 use other software (e.g. ultraiso) to make boot disk if necessary

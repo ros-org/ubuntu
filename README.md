@@ -42,7 +42,7 @@ remember to set the link for network connection if failed to visit websites afte
 >$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
 
 ***
-# remote desktop
+# remote access
 
 set remmina if it is used as terminal
 ![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")
@@ -66,6 +66,8 @@ uncheck the “requlre-encryption” attribute
 
 use remote desktop from rdp to vnc
 ![remote_rdp_vnc](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remote_rdp_vnc.png "remote_rdp_vnc")
+
+use scp to copy files between linux systems and use [pscp](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/putty.zip) to copy files from or to windows
 
 ***
 # install software

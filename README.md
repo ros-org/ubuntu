@@ -72,7 +72,7 @@ use scp to copy files between linux systems and use [pscp](https://raw.githubuse
 ***
 # install software
 
->$ sudo apt-get install vim ssh setserial cutecom
+>$ sudo apt-get install vim ssh setserial cutecom htop
 
 ***
 # change hostname

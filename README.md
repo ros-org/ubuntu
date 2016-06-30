@@ -74,7 +74,7 @@ set x11vnc for connecting odroid-ubuntu from windows
 
     start on login-session-start
     script
-        x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log -rfbauth /etc/x11vnc.pass -rfbport 5900 
+        x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log -rfbport 5900 
     end script
 
 use remote desktop from rdp to vnc

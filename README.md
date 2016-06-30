@@ -64,6 +64,19 @@ open dconf-editor and visit org > gnome > desktop > remote-access
 ![dconf_editor](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/dconf_editor.png "dconf_editor")
 uncheck the “requlre-encryption” attribute
 
+set x11vnc for connecting odroid-ubuntu from windows
+
+>$ sudo apt-get install x11vnc
+
+>$ sudo apt-get install xrdp
+
+>$ sudo vi /etc/init/x11vnc.conf
+
+    start on login-session-start
+    script
+        x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log -rfbauth /etc/x11vnc.pass -rfbport 5900 
+    end script
+
 use remote desktop from rdp to vnc
 ![remote_rdp_vnc](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remote_rdp_vnc.png "remote_rdp_vnc")
 

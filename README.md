@@ -127,7 +127,7 @@ save (ctrl^o + return) and exit (ctrl^x)
 
 add user group permission
 
->$ sudo usermod -aG dialout username
+>$ sudo usermod -aG dialout $(whoami)
 
 change grub permission
 

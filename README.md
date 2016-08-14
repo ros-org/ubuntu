@@ -90,6 +90,19 @@ use scp to copy files between linux systems and use [pscp](https://raw.githubuse
 
 >$ sudo apt-get install vim ssh setserial cutecom htop
 
+install gitg for git and rapidsvn for svn
+
+>$ sudo apt-get install gitg rapidsvn
+
+link svn repository if rapidsvn is failed to get permanent certification
+
+>$ svn list https://10.1.11.10/svn/... 
+
+remove all *~ files for svn
+
+>$ find . -name *~ -exec rm {} \;
+
+
 ***
 # change hostname
 

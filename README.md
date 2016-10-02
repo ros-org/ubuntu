@@ -53,7 +53,7 @@ set desktop sharing if it is used as host
 ![desktop_sharing](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_sharing.png "desktop_sharing")
 ![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_settings.png "desktop_settings")
 
-set xrdp for connecting ubuntu from other system terminal (e.g. windows / ubuntu)
+set vnc4server for connecting ubuntu from other system terminal (e.g. windows / ubuntu)
 
 >$ sudo apt-get install vnc4server
 
@@ -84,6 +84,8 @@ use remote desktop from rdp to vnc
 use [tightvnc](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/tightvnc-2.7.10-setup-64bit.msi) to copy and paste clipboard between windows and linux
 
 use scp to copy files between linux systems and use [pscp](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/putty.zip) to copy files from or to windows
+
+use [teamviewer](https://www.teamviewer.com/en/download/) to fulfill remote access worldwide
 
 ***
 # set permissions

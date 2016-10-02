@@ -19,6 +19,45 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
 ***
+# permission settings
+
+cancel sudo password
+
+>$ sudo sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ c %sudo\tALL=(ALL:ALL) NOPASSWD:ALL" /etc/sudoers
+
+use pkexec command if sudo failed
+
+>$ pkexec visudo -f /etc/sudoers
+
+save (ctrl^o + return) and exit (ctrl^x)
+
+add user group permission
+
+>$ sudo usermod -aG dialout $(whoami)
+
+change grub permission
+
+>$ sudo sed -i '177s/ ro / rw /' /etc/grub.d/10_linux
+
+>$ sudo update-grub
+
+change powerbtn action
+
+>$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=sudo /sbin/shutdown -h now" /etc/acpi/events/powerbtn
+
+create tty rule file for current user
+
+>$ echo 'KERNEL=="ttyUSB[0-9]*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
+
+lookup the device ID_PATH
+
+>$ udevadm info /dev/ttyUSB0 (e.g. USB0 ID_PATH=pci-0000:00:1a.0-usb-0:1.2:1.0)
+
+![lsusb_lookup](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/lsusb_lookup.png "lsusb_lookup")
+
+>$ echo 'SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:1a.0-usb-0:1.1:1.0", SYMLINK+="alias_name(e.g.)"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
+
+***
 # network connection
 
 >$ sudo vi /etc/network/interfaces
@@ -85,9 +124,12 @@ use [tightvnc](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/tight
 
 use scp to copy files between linux systems and use [pscp](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/putty.zip) to copy files from or to windows
 
-
 ***
 # install software
+
+install google input source for ibus
+
+>$ sudo apt-get install ibus-googlepinyin
 
 >$ sudo apt-get install vim ssh setserial cutecom htop
 
@@ -125,51 +167,6 @@ remove all *~ files for svn
 edit the startup program command as follow if running ros file before calling .bashrc
 
 > gnome-terminal -x bash -c 'export ROS_IP=`hostname -I`; source /opt/ros/indigo/setup.bash; source ~/catkin_ws/devel/setup.bash; roslaunch bringup bringup-boot.launch'
-
-***
-# permission settings
-
-cancel sudo password
-
->$ sudo sed -i -e "/%sudo\s*ALL=(ALL:ALL)\s*ALL/ c %sudo\tALL=(ALL:ALL) NOPASSWD:ALL" /etc/sudoers
-
-use pkexec command if sudo failed
-
->$ pkexec visudo -f /etc/sudoers
-
-save (ctrl^o + return) and exit (ctrl^x)
-
-add user group permission
-
->$ sudo usermod -aG dialout $(whoami)
-
-change grub permission
-
->$ sudo sed -i '177s/ ro / rw /' /etc/grub.d/10_linux
-
->$ sudo update-grub
-
-change powerbtn action
-
->$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=sudo /sbin/shutdown -h now" /etc/acpi/events/powerbtn
-
-create tty rule file for current user
-
->$ echo 'KERNEL=="ttyUSB[0-9]*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
-
-lookup the device ID_PATH
-
->$ udevadm info /dev/ttyUSB0 (e.g. USB0 ID_PATH=pci-0000:00:1a.0-usb-0:1.2:1.0)
-
-![lsusb_lookup](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/lsusb_lookup.png "lsusb_lookup")
-
->$ echo 'SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:1a.0-usb-0:1.1:1.0", SYMLINK+="alias_name(e.g.)"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
-
-change ttyS* for user permission
-
->$ sudo chown root:root file_name
-
->$ sudo chmod u+s file_name
 
 ***
 # remastersys backup

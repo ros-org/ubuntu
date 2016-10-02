@@ -19,7 +19,7 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
 ***
-# permission settings
+# set permissions
 
 cancel sudo password
 
@@ -31,31 +31,33 @@ use pkexec command if sudo failed
 
 save (ctrl^o + return) and exit (ctrl^x)
 
-add user group permission
-
->$ sudo usermod -aG dialout $(whoami)
-
-change grub permission
-
->$ sudo sed -i '177s/ ro / rw /' /etc/grub.d/10_linux
-
->$ sudo update-grub
-
-change powerbtn action
+change powerbtn event to shutdown immediately
 
 >$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=sudo /sbin/shutdown -h now" /etc/acpi/events/powerbtn
 
+add current user to dialout group for tty authority
+
+>$ sudo usermod -aG dialout $(whoami)
+
 create tty rule file for current user
 
->$ echo 'KERNEL=="ttyUSB[0-9]*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
+>$ echo 'KERNEL=="ttyS[0-9]", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-persistent-tty.rules
 
-lookup the device ID_PATH
+>$ echo 'KERNEL=="ttyUSB[0-9]", MODE="0666"' | sudo tee -a /etc/udev/rules.d/70-persistent-tty.rules
+
+lookup and bind the device id
 
 >$ udevadm info /dev/ttyUSB0 (e.g. USB0 ID_PATH=pci-0000:00:1a.0-usb-0:1.2:1.0)
 
 ![lsusb_lookup](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/lsusb_lookup.png "lsusb_lookup")
 
->$ echo 'SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:1a.0-usb-0:1.1:1.0", SYMLINK+="alias_name(e.g.)"' | sudo tee -a /etc/udev/rules.d/70-ttyusb.rules
+>$ echo 'SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:1a.0-usb-0:1.2:1.0", SYMLINK+="alias_name(e.g.)"' | sudo tee -a /etc/udev/rules.d/70-persistent-tty.rules
+
+revise grub file in order to skip boot-in check if necessary
+
+>$ sudo sed -i '177s/ ro / rw /' /etc/grub.d/10_linux
+
+>$ sudo update-grub
 
 ***
 # network connection

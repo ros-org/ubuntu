@@ -133,7 +133,7 @@ install google input source for ibus (or fcitx)
 
 >$ sudo apt-get install ibus-googlepinyin (or fcitx-googlepinyin)
 
-install basic toolkits
+install basic development toolkits
 
 >$ sudo apt-get install vim ssh htop cutecom setserial
 
@@ -150,6 +150,16 @@ remove all backup~ files from svn if necessary
 >$ find . -name *~ -exec rm {} \;
 
 ***
+# auto startup
+
+![startup_applications](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/startup_applications.png "startup_applications")
+![edit_preferences](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/edit_preferences.png "edit_preferences")
+
+edit the startup program command as follow if running ros file before calling .bashrc
+
+> gnome-terminal -x bash -c 'export ROS_IP=`hostname -I`; source /opt/ros/indigo/setup.bash; source ~/catkin_ws/devel/setup.bash; roslaunch bringup bringup-boot.launch'
+
+***
 # change hostname
 
 >$ sudo vi /etc/hostname
@@ -162,16 +172,6 @@ remove all backup~ files from svn if necessary
     127.0.1.1       [hostname]
 
 ***
-# auto startup
-
-![startup_applications](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/startup_applications.png "startup_applications")
-![edit_preferences](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/edit_preferences.png "edit_preferences")
-
-edit the startup program command as follow if running ros file before calling .bashrc
-
-> gnome-terminal -x bash -c 'export ROS_IP=`hostname -I`; source /opt/ros/indigo/setup.bash; source ~/catkin_ws/devel/setup.bash; roslaunch bringup bringup-boot.launch'
-
-***
 # remastersys backup
 
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)
@@ -181,8 +181,6 @@ note that remastersys should be re-installed if it is already a remastersys back
 change "WORKDIR" to custom directory if necessary (e.g. /home/remastersys)
 
 >$ sudo nano /etc/remastersys.conf
-
-
 
 do the remastersys backup
 

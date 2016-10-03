@@ -19,7 +19,9 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
 ***
-# network connection
+# configure network
+
+bind eth0 to staic address for legacy linux network (not recommended）
 
 >$ sudo vi /etc/network/interfaces
 
@@ -30,8 +32,8 @@ use other software (e.g. ultraiso) to make boot disk if necessary
     address 192.168.0.7
     netmask 255.255.255.0
 
-bind eth0 to staic address
-
+>$ ifconfig eth0 [ip_address] netmask [ip_netmask] up
+ 
 ![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
 
 set dns as network provider 
@@ -41,9 +43,6 @@ set dns as network provider
 remember to set the link for network connection if failed to visit websites after installation
 
 >$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
-
-***
-# remote access
 
 set remmina if it is used as terminal
 ![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")

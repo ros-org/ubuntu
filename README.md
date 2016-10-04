@@ -66,8 +66,8 @@ set connection in network manager config file (strongly recommended)
 
     [ipv4]
     method=manual
+    dns=192.168.0.1;
     addresses1=192.168.0.7/24,192.168.0.1
-    dns=211.136.112.50
 
     [ipv6]
     method=auto

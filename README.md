@@ -42,7 +42,35 @@ add connection in network manager gui mode (recommended)
 
 set connection in network manager config file (strongly recommended)
 
->$ cd /etc/NetworkManager/system-connections
+>$ sudo vi /etc/NetworkManager/system-connections/wifiname
+
+    [connection]
+    id=ChinaNet-ouiyeah
+    uuid=cb9d0600-2d5f-4430-b874-9aeb67914d2f
+    type=802-11-wireless
+    autoconnect=true
+    timestamp=1475579707
+
+    [802-11-wireless]
+    ssid=ChinaNet-ouiyeah
+    mode=infrastructure
+    mac-address=40:E2:30:C3:76:43
+    seen-bssids=F4:57:3E:03:94:C4;
+    security=802-11-wireless-security
+
+    [802-11-wireless-security]
+    key-mgmt=wpa-psk
+    psk=Can@jingt0
+
+    [ipv4]
+    method=manual
+    addresses1=192.168.0.7;24;192.168.0.1;
+
+    [ipv6]
+    method=auto
+
+cat /proc/sys/kernel/random/uuid
+
 
 set dns as network provider 
 

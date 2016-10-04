@@ -67,12 +67,15 @@ set connection in network manager config file (strongly recommended)
     [ipv4]
     method=manual
     addresses1=192.168.0.7/24,192.168.0.1
+    dns=211.136.112.50
 
     [ipv6]
     method=auto
 
 cat /proc/sys/kernel/random/uuid
+
 ifconfig -a | grep wlan0
+
 sudo chmod 600 wifiname
 
 set dns as network provider 
@@ -82,6 +85,9 @@ set dns as network provider
 remember to set the link for network connection if failed to visit websites after installation
 
 >$ sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+
+***
+# remote access
 
 set remmina if it is used as terminal
 ![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")

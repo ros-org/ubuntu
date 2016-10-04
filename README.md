@@ -32,9 +32,17 @@ bind eth0 to staic address for legacy linux network (not recommended）
     address 192.168.0.7
     netmask 255.255.255.0
 
+reset eth0 to static address once for legacy linux network (not recommended)
+
 >$ ifconfig eth0 [ip_address] netmask [ip_netmask] up
- 
+
+add connection in network manager gui mode (recommended)
+
 ![ethernet_connection](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/ethernet_connection.png "ethernet_connection")
+
+set connection in network manager config file (strongly recommended)
+
+>$ cd /etc/NetworkManager/system-connections
 
 set dns as network provider 
 

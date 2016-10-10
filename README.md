@@ -203,7 +203,7 @@ remove all backup~ files from svn if necessary
 
 edit the startup program command as follow if running ros file before calling .bashrc
 
-> gnome-terminal -x bash -c 'export ROS_IP=`hostname -I`; source /opt/ros/indigo/setup.bash; source ~/catkin_ws/devel/setup.bash; roslaunch bringup bringup-boot.launch'
+> gnome-terminal -x bash -c '~/catkin_ws/boot.sh'
 
 ***
 # change hostname

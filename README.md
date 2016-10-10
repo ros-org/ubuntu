@@ -189,7 +189,7 @@ install gitg for git and rapidsvn for svn
 
 link svn repository if rapidsvn is failed to get permanent certification
 
->$ svn list https://10.1.11.10/svn/... 
+>$ svn list https://10.1.11.10/svn/LaserGPS1 (e.g.)
 
 remove all backup~ files from svn if necessary
 

@@ -42,7 +42,7 @@ add connection in network manager gui mode (recommended)
 
 set connection in network manager config file (strongly recommended)
 
->$ sudo vi /etc/NetworkManager/system-connections/wifiname
+>$ sudo vi /etc/NetworkManager/system-connections/wifi_ssid
 
     [connection]
     id=ChinaNet-ouiyeah
@@ -65,22 +65,12 @@ set connection in network manager config file (strongly recommended)
     psk=Can@jingt0
 
     [ipv4]
-    method=manual
+    method=manual / shared
     dns=192.168.0.1;
     addresses1=192.168.0.7/24,192.168.0.1
 
     [ipv6]
     method=auto
-
-cat /proc/sys/kernel/random/uuid
-
-ifconfig -a | grep wlan0
-
-sudo chmod 600 wifiname
-
-set dns as network provider 
-
-> 211.136.17.107 / 211.136.112.50 for china mobile
 
 remember to set the link for network connection if failed to visit websites after installation
 

@@ -173,11 +173,11 @@ install basic development toolkits
 
 >$ sudo apt-get install vim ssh htop cutecom setserial
 
-open <http://www.sublimetext.com/> to download and install sublime
+open <http://www.sublimetext.com/> to download and install sublime (or apt-get install sublime-text)
 
 install gitg for git and rapidsvn for svn
 
->$ sudo apt-get install gitg rapidsvn subl meld sublime-text
+>$ sudo apt-get install gitg rapidsvn subl meld
 
 link svn repository if rapidsvn is failed to get permanent certification
 

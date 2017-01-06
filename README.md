@@ -177,7 +177,7 @@ open <http://www.sublimetext.com/> to download and install sublime
 
 install gitg for git and rapidsvn for svn
 
->$ sudo apt-get install gitg rapidsvn
+>$ sudo apt-get install gitg rapidsvn subl meld sublime-text
 
 link svn repository if rapidsvn is failed to get permanent certification
 
@@ -186,6 +186,8 @@ link svn repository if rapidsvn is failed to get permanent certification
 remove all backup~ files from svn if necessary
 
 >$ find . -name *~ -exec rm {} \;
+
+set "subl" and "meld" in the preference of rapidsvn
 
 ***
 # auto startup

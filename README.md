@@ -171,7 +171,7 @@ install google input source for ibus (or fcitx)
 
 install basic development toolkits
 
->$ sudo apt-get install vim ssh htop cutecom setserial
+>$ sudo apt-get install vim ssh htop cutecom setserial imagemagick
 
 open <http://www.sublimetext.com/> to download and install sublime (or apt-get install sublime-text)
 

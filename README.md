@@ -21,8 +21,7 @@ use other software (e.g. ultraiso) to make boot disk if necessary
 ***
 # configure network
 
-bind eth0 to staic address for legacy linux network (not recommended）
-
+bind eth0 to staic address for legacy linux network (not recommended)
 >$ sudo vi /etc/network/interfaces
 
     #auto lo
@@ -173,7 +172,11 @@ install basic development toolkits
 
 >$ sudo apt-get install vim ssh htop cutecom setserial imagemagick
 
-open <http://www.sublimetext.com/> to download and install sublime (or apt-get install sublime-text)
+install sublime text editor
+
+>$ sudo add-apt-repository ppa:webupd8team/sublime-text-3
+
+>$ sudo apt-get update && sudo apt-get install sublime-text-installer
 
 install gitg for git and rapidsvn for svn
 

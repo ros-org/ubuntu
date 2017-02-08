@@ -182,7 +182,7 @@ install sublime text editor
 
 install gitg for git and rapidsvn for svn
 
->$ sudo apt-get install gitg rapidsvn subl meld
+>$ sudo apt-get install gitg rapidsvn meld
 
 link svn repository if rapidsvn is failed to get permanent certification
 

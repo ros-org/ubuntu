@@ -180,6 +180,12 @@ install sublime text editor
 
 >$ sudo apt-get install sublime-text-installer
 
+set git config for user name and email
+
+>$ git config --global user.name $USER
+
+>$ git config --global user.email `hostname`@hitrobotgroup.com
+
 install gitg for git and rapidsvn for svn
 
 >$ sudo apt-get install gitg rapidsvn meld

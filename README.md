@@ -186,6 +186,10 @@ set git config for user name and email
 
 >$ git config --global user.email \`hostname\`@hitrobotgroup.com
 
+generate ssh-key and add ~/.ssh/id_rsa.pub to github if necessary
+
+>$ ssh-keygen -t rsa -C `hostname`@hitrobotgroup.com
+
 install gitg for git and rapidsvn for svn
 
 >$ sudo apt-get install gitg rapidsvn meld

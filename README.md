@@ -184,7 +184,7 @@ set git config for user name and email
 
 >$ git config --global user.name $USER
 
->$ git config --global user.email `hostname`@hitrobotgroup.com
+>$ git config --global user.email \`hostname\`@hitrobotgroup.com
 
 install gitg for git and rapidsvn for svn
 

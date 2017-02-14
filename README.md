@@ -194,7 +194,7 @@ set git config for user name and email
 
 generate ssh-key and add ~/.ssh/id_rsa.pub to github if necessary
 
->$ ssh-keygen -t rsa -C `hostname`@hitrobotgroup.com
+>$ ssh-keygen -t rsa -C $USER@hitrobotgroup.com
 
 install gitg for git and rapidsvn for svn
 

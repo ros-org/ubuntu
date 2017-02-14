@@ -188,9 +188,9 @@ install sublime text editor
 
 set git config for user name and email
 
->$ git config --global user.name $USER
+>$ git config --global user.name \`hostname\`
 
->$ git config --global user.email \`hostname\`@hitrobotgroup.com
+>$ git config --global user.email $USER@hitrobotgroup.com
 
 generate ssh-key and add ~/.ssh/id_rsa.pub to github if necessary
 

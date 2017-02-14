@@ -98,7 +98,7 @@ set vnc4server for connecting ubuntu from other system terminal (e.g. windows / 
 
 open dconf-editor and visit org > gnome > desktop > remote-access
 ![dconf_editor](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/dconf_editor.png "dconf_editor")
-uncheck the “requlre-encryption” attribute
+uncheck the "requlre-encryption" attribute
 
 set x11vnc for connecting odroid-ubuntu from windows
 
@@ -138,6 +138,10 @@ save (ctrl^o + return) and exit (ctrl^x)
 change powerbtn event to shutdown immediately
 
 >$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=sudo /sbin/shutdown -h now" /etc/acpi/events/powerbtn
+
+open dconf-editor and visit org > gnome > settings-daemon > plugins > power
+![dconf_button](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/dconf_button.png "dconf_button")
+change the "button-power" attribute to "nothing"
 
 add current user to dialout group for tty authority
 

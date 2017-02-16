@@ -218,6 +218,10 @@ remove all backup~ files from svn if necessary
 
 set "subl" and "meld" in the preference of rapidsvn
 
+install partition tools if necessary
+
+>$ sudo apt-get install gparted
+
 ***
 # auto startup
 

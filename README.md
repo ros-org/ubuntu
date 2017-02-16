@@ -141,13 +141,9 @@ change powerbtn event to shutdown immediately (legacy)
 
 change powerbtn event to reset communication (current)
 
->$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=/etc/acpi/comm-reset.sh;/etc/acpi/comm-eth9.sh" /etc/acpi/events/powerbtn
+>$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=/etc/acpi/comm-reset.sh" /etc/acpi/events/powerbtn
 
->$ roscd bringup;
-
->$ sudo ln -s \`pwd\`/shell/comm-reset.sh /etc/acpi/comm-reset.sh
-
->$ sudo ln -s \`pwd\`/shell/comm-eth9.sh /etc/acpi/comm-eth9.sh
+>$ roscd bringup; sudo ln -s \`pwd\`/shell/comm-reset.sh /etc/acpi/comm-reset.sh
 
 >$ sudo service acpid restart
 

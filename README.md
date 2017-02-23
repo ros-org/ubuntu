@@ -143,7 +143,7 @@ change powerbtn event to reset communication (current)
 
 >$ sudo sed -i -e "/action=\/etc\/acpi\/powerbtn.sh/ c action=/etc/acpi/comm-reset.sh" /etc/acpi/events/powerbtn
 
->$ roscd bringup; sudo ln -s \`pwd\`/shell/comm-reset.sh /etc/acpi/comm-reset.sh
+>$ sudo ln -s ~/catkin_ws/comm-reset.sh /etc/acpi/comm-reset.sh
 
 >$ sudo service acpid restart
 

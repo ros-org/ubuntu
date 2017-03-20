@@ -222,6 +222,14 @@ install partition tools if necessary
 
 >$ sudo apt-get install gparted
 
+install mysql database if necessary
+
+>$ sudo apt-get install mysql-server
+
+>$ sudo apt-get install mysql-client
+
+>$ sudo apt-get install libmysqlclient-dev
+
 ***
 # auto startup
 

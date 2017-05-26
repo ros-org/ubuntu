@@ -122,6 +122,14 @@ use scp to copy files between linux systems and use [pscp](https://raw.githubuse
 
 use [teamviewer](https://www.teamviewer.com/en/download/) to fulfill remote access worldwide
 
+# fake monitor
+
+>$ sudo xrandr --newmode "1024x600"   49.00  1024 1072 1168 1312  600 603 613 624 -hsync +vsync
+
+>$ sudo xrandr --addmode VIRTUAL1 1024x600
+
+retry gui program (e.g. rviz) and good luck
+
 ***
 # set permissions
 

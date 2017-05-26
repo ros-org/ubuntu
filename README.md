@@ -124,6 +124,8 @@ use [teamviewer](https://www.teamviewer.com/en/download/) to fulfill remote acce
 
 # fake monitor
 
+fake a virtual monitor temperarily if gui program open failed
+
 >$ xrandr --newmode "hitrobot"   49.00  1024 1072 1168 1312  600 603 613 624 -hsync +vsync
 
 >$ xrandr --addmode VIRTUAL1 hitrobot

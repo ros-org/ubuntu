@@ -124,9 +124,9 @@ use [teamviewer](https://www.teamviewer.com/en/download/) to fulfill remote acce
 
 # fake monitor
 
->$ sudo xrandr --newmode "1024x600"   49.00  1024 1072 1168 1312  600 603 613 624 -hsync +vsync
+>$ xrandr --newmode "hitrobot"   49.00  1024 1072 1168 1312  600 603 613 624 -hsync +vsync
 
->$ sudo xrandr --addmode VIRTUAL1 1024x600
+>$ xrandr --addmode VIRTUAL1 hitrobot
 
 retry gui program (e.g. rviz) and good luck
 

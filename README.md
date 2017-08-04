@@ -214,6 +214,10 @@ generate ssh-key and add ~/.ssh/id_rsa.pub to github if necessary
 
 >$ ssh-keygen -t rsa -C $USER@hitrobotgroup.com
 
+may need to add ssh only if the system isn’t doing it for you automatically.
+
+>$ ssh-add ~/.ssh/id_rsa
+
 install gitg for git and rapidsvn for svn
 
 >$ sudo apt-get install gitg rapidsvn meld
@@ -221,7 +225,6 @@ install gitg for git and rapidsvn for svn
 link svn repository if rapidsvn is failed to get permanent certification
 
 >$ svn list https://10.1.11.10/svn/LaserGPS1 (e.g.)
-
 remove all backup~ files from svn if necessary
 
 >$ find . -name *~ -exec rm {} \;

@@ -250,6 +250,12 @@ install mysql database if necessary
 
 >$ sudo apt-get install libmysqlclient-dev
 
+link eigen3 for catkin make
+
+>$ sudo ln -s /usr/include/eigen3/Eigen/ /usr/include/Eigen
+
+>$ sudo ln -s /usr/include/eigen3/unsupported/ /usr/include/unsupported
+
 ***
 # auto startup
 

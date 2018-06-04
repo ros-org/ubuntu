@@ -97,10 +97,16 @@ remember to set the link for network connection if failed to visit websites afte
 # remote access
 
 set remmina if it is used as terminal
+
+>$ sudo apt-get install remmina
+
 ![remmina_client](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_client.png "remmina_client")
 ![remmina_add](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/remmina_add.png "remmina_add")
 
 set desktop sharing if it is used as host
+
+>$ sudo apt-get install vino
+
 ![desktop_sharing](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_sharing.png "desktop_sharing")
 ![desktop_settings](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/desktop_settings.png "desktop_settings")
 

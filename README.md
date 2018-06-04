@@ -22,6 +22,21 @@ note that if ubuntu system was reinstalled this hostname settings page may not b
 ![install_complete](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_complete.png "install_complete")
 
 ***
+# fake monitor
+
+set scaling factor to 2 if hi-dpi screen enabled
+
+>$ gsettings set org.gnome.desktop.interface scaling-factor 2
+
+fake a virtual monitor temperarily if gui program open failed
+
+>$ xrandr --newmode "hitrobot"   49.00  1024 1072 1168 1312  600 603 613 624 -hsync +vsync
+
+>$ xrandr --addmode VIRTUAL1 hitrobot
+
+retry gui program (e.g. rviz) and good luck
+
+***
 # configure network
 
 bind eth0 to staic address for legacy linux network (not recommended)
@@ -122,16 +137,6 @@ use [tightvnc](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/tight
 use scp to copy files between linux systems and use [pscp](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/putty.zip) to copy files from or to windows
 
 use [teamviewer](https://www.teamviewer.com/en/download/) to fulfill remote access worldwide
-
-# fake monitor
-
-fake a virtual monitor temperarily if gui program open failed
-
->$ xrandr --newmode "hitrobot"   49.00  1024 1072 1168 1312  600 603 613 624 -hsync +vsync
-
->$ xrandr --addmode VIRTUAL1 hitrobot
-
-retry gui program (e.g. rviz) and good luck
 
 ***
 # set permissions

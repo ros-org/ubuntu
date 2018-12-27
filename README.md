@@ -206,7 +206,7 @@ install google input source for ibus (or fcitx)
 
 install basic development toolkits
 
->$ sudo apt-get install vim ssh htop cutecom setserial imagemagick byobu
+>$ sudo apt-get install vim ssh htop cutecom setserial imagemagick
 
 install sublime text editor
 

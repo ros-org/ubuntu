@@ -240,6 +240,10 @@ link git repository
 
 >$ git clone git@github.com:ros-org/ros_org.git
 
+fix git error if necessary
+
+>$ find .git/objects/ -type f -empty | xargs rm
+
 link svn repository if rapidsvn is failed to get permanent certification
 
 >$ svn list https://10.1.11.10/svn/LaserGPS1 (e.g.)

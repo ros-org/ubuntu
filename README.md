@@ -208,15 +208,9 @@ install basic development toolkits
 
 >$ sudo apt-get install vim ssh htop cutecom setserial imagemagick
 
-install sublime text editor
-
->$ sudo add-apt-repository ppa:webupd8team/sublime-text-3
-
->$ sudo apt-get update
-
->$ sudo apt-get install sublime-text-installer
-
 set git config for user name and email
+
+>$ sudo apt-get install git
 
 >$ git config --global user.name \`hostname\`
 

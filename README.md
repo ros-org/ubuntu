@@ -271,6 +271,29 @@ edit the startup program command as follow if running ros file before calling .b
 > gnome-terminal -x bash -c '~/catkin_ws/boot.sh'
 
 ***
+# upgrade linux kernel
+
+download [intel nuc wifi](https://www.intel.com/content/www/us/en/support/articles/000005511/network-and-i-o/wireless-networking.html)
+
+select [linux kernel version](http://kernel.ubuntu.com/~kernel-ppa/mainline/)
+
+download headers, headers-generic, and image deb
+
+>$ uname -sr
+
+>$ sudo dpkg -i *.deb
+
+>$ sudo reboot
+
+>$ uname -sr
+
+>$ sudo cp -i iwlwifi-*.ucode /lib/firmware
+
+>$ sudo update-grub
+
+>$ sudo reboot
+
+***
 # change hostname
 
 >$ sudo vi /etc/hostname

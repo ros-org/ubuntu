@@ -306,7 +306,14 @@ download headers, headers-generic, and image deb
     127.0.1.1       [hostname]
 
 ***
-# remastersys backup
+# systemback iso
+
+>$ sudo add-apt-repository ppa:nemh/systemback
+
+>$ sudo apt-get update && sudo apt-get install systemback unionfs-fuse
+
+***
+# remastersys backup (obselete)
 
 download [remastersys_3.0.3-1_all.deb](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/pkg/remastersys_3.0.3-1_all.deb)
 ![install_remastersys](https://raw.githubusercontent.com/ouiyeah/ubuntu/master/img/install_remastersys.png "install_remastersys")

@@ -216,6 +216,8 @@ set git config for user name and email
 
 >$ git config --global user.email $USER@hitrobotgroup.com
 
+>$ git config --global credential.helper store
+
 generate ssh-key and add ~/.ssh/id_rsa.pub to github if necessary
 
 >$ ssh-keygen -t rsa -C $USER@hitrobotgroup.com

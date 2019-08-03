@@ -295,12 +295,6 @@ download headers, headers-generic, and image deb
 
 >$ sudo reboot
 
-revise grub file in order to alter display resolution if necessary
-
->$ sudo sed -i -e '/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/ c GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.alpha_support=1"' /etc/default/grub
-
->$ sudo update-grub
-
 ***
 # change hostname
 
@@ -319,6 +313,12 @@ revise grub file in order to alter display resolution if necessary
 >$ sudo add-apt-repository ppa:nemh/systemback
 
 >$ sudo apt-get update && sudo apt-get install systemback unionfs-fuse
+
+revise grub file in order to alter display resolution if necessary
+
+>$ sudo sed -i -e '/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/ c GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.alpha_support=1"' /etc/default/grub
+
+>$ sudo update-grub
 
 ***
 # remastersys backup (obselete)
